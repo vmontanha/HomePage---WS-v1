@@ -1486,7 +1486,6 @@ p {
     color: #fff; }
 
 .footer-copyright {
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-top: 15px;
   padding-bottom: 30px; }
 
@@ -1505,6 +1504,17 @@ p {
     transition: all 0.3s ease-out 0s; }
     .copyright-content a:hover {
       color: #FE8464; }
+
+      @media only screen and (max-width: 576px) and (max-width: 767px) {
+        .copyright-content p {
+          font-size: 14px;
+          } 
+          .copyright-content a {
+            font-size: 14px;
+            } 
+        }
+
+
 
 /*===== BACK TO TOP =====*/
 .back-to-top {
