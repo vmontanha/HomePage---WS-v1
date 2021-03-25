@@ -765,6 +765,11 @@ p {
     transition: .5s ease;
     background-color: #000;
 }
+@media only screen and (max-width: 576px) and (max-width: 767px) {
+  .img-fluid-logo {
+    width: 200px !important;
+    margin: auto !important;
+  margin-bottom: 50px;} }
 
 .get-started {
   margin-top: 300px;
