@@ -768,8 +768,13 @@ p {
 @media only screen and (max-width: 576px) and (max-width: 767px) {
   .img-fluid-logo {
     width: 200px !important;
-    margin-left: 40% !important;
-    margin-bottom: 50px;} }
+    margin-left: 30% !important;
+    margin-bottom: 0;}
+  .header-title {
+    font-size: 20px !important;
+    margin-top: 100px !important ;
+  }
+  }
 
 .get-started {
   margin-top: 300px;
