@@ -116,7 +116,8 @@ $(function () {
     $(window).on('scroll', function (event) {
         if ($(this).scrollTop() > 600) {
             $('.back-to-top').fadeIn(200)
-        } else {
+        }
+         else {
             $('.back-to-top').fadeOut(200)
         }
     });
