@@ -31,7 +31,7 @@
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvética Nue";
   font-weight: normal;
   font-style: normal;
   color: #6A6972;
@@ -44,8 +44,11 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-img {
-  max-width: 100%; }
+  section img {
+    max-width: 100%; 
+    box-shadow: 6px 5px 26px #313113;
+    border-radius: 30px;
+  }
 
 a:focus,
 input:focus,
@@ -78,15 +81,15 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   color: #2E2E2E;
   margin: 0px; }
 
 h1 {
-  font-size: 89px; }
+  font-size: 80px !important; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 26px !important; }
 
 h3 {
   font-size: 28px; }
@@ -100,6 +103,11 @@ h5 {
 h6 {
   font-size: 16px; }
 
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 50px !important; 
+      margin-bottom:  100px !important;} }  
+
 ul, ol {
   margin: 0px;
   padding: 0px;
@@ -110,7 +118,8 @@ p {
   font-weight: 400;
   line-height: 26px;
   color: #6A6972;
-  margin: 0px; }
+  margin: 0px; 
+  margin-top: 15px;}
 
 .bg_cover {
   background-position: center center;
@@ -165,7 +174,7 @@ p {
   margin-bottom: 10px !important; }
 
 .section-title .title {
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 42px; }
   @media (max-width: 767px) {
@@ -177,6 +186,22 @@ p {
   .section-title .title span {
     font-weight: 400;
     display: contents; }
+
+    .section-title .title-right {
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 42px; 
+    text-align: right;}
+      @media (max-width: 767px) {
+        .section-title .title-right {
+          font-size: 20px; 
+          text-align: left !important;} }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .section-title .title {
+          font-size: 30px; } }
+      .section-title .title span {
+        font-weight: 400;
+        display: contents; }
 
 /*===== All Section Title Style =====*/
 .section-title .sub-title {
@@ -494,7 +519,7 @@ p {
 /*===== NAVBAR =====*/
 .navbar-area {
   position: absolute;
-  top: 0;
+  top: 8%;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -1020,9 +1045,22 @@ p {
       display: none; } }
 
 .about-content {
-  max-width: 480px; }
+  max-width: 100%; }
+  @media (max-width: 767px) {
+    .about-content {
+      max-width: 480px !important; 
+      text-align: left !important; 
+    } 
+      
+    }
   .about-content .text {
-    margin-top: 15px; }
+    text-align: right;
+    }
+    @media (max-width: 767px) {
+      .about-content .text {
+         text-align: left;
+      } 
+    }
   .about-content .main-btn {
     background: -webkit-linear-gradient(left, #fe8464 0%, #FF9C1A 50%, #fe8464 100%);
     background: -o-linear-gradient(left, #fe8464 0%, #FF9C1A 50%, #fe8464 100%);
@@ -1434,7 +1472,7 @@ p {
 .footer-area {
   background-position: top center;
   position: relative;
-  z-index: 5; }
+  z-index: 5;}
 
 .footer-area::before {
   position: absolute;
@@ -1521,6 +1559,7 @@ p {
 
 .footer-copyright {
   padding-top: 15px;
+  margin-top: 200px;
   padding-bottom: 30px; }
 
 .copyright-content {
