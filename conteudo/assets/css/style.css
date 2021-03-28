@@ -91,6 +91,8 @@ h1 {
 h2 {
   font-size: 26px !important; }
 
+
+
 h3 {
   font-size: 28px; }
 
@@ -107,7 +109,8 @@ h6 {
     h1 {
       font-size: 50px !important; 
       margin-bottom:  100px !important;} }  
-
+    
+    
 ul, ol {
   margin: 0px;
   padding: 0px;
@@ -778,7 +781,7 @@ p {
   position: relative;
   z-index: 5;
   height: 100vh; }
-.header-hero .overlay {
+.header-hero .overlay-header{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -797,7 +800,8 @@ p {
     margin-bottom: 0;}
   .header-title {
     font-size: 20px !important;
-    margin-top: 20px !important ;
+    margin-top: 40px !important ;
+    line-height: normal !important;
   }
   }
 
@@ -843,16 +847,16 @@ p {
       .header-hero-content .header-sub-title {
         font-size: 30px; } }
   .header-hero-content .header-title {
-    font-size: 31px;
+    font-size: 60px;
     font-weight: 300;
     color: #fff;
   line-height: 50px; }
     @media (max-width: 767px) {
       .header-hero-content .header-title {
-        font-size: 24px; } }
-    @media only screen and (min-width: 576px) and (max-width: 767px) {
+        font-size: 22px; } }
+    @media only screen and (max-width: 576px) and (max-width: 767px) {
       .header-hero-content .header-title {
-        font-size: 31px; } }
+        font-size: 12px; } }
   .header-hero-content .text {
     color: #fff;
     margin-top: 30px; }
@@ -1591,15 +1595,17 @@ p {
 
 /*===== BACK TO TOP =====*/
 .back-to-top {
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   position: fixed;
   right: 20px;
   bottom: 20px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 5px;
+  text-align: center;
+  width: 88px;
+  height: 49px;
+  font-family: "Poppins";
+  line-height: 50px;
+  border-radius: 15px;
   background: -webkit-linear-gradient(left, #FF9C1A 0%, #feae45 100%);
   background: -o-linear-gradient(left, #FF9C1A 0%, #cb7b12 100%);
   background: linear-gradient(to right, #FF9C1A 0%, #ff9100 100%);
@@ -1609,12 +1615,37 @@ p {
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  display: none; }
+  transition: all 0.3s ease-out 0s;}
   .back-to-top:hover {
     color: #fff; }
-    @media only screen and (max-width: 576px) and (max-width: 767px) {
-      .back-to-top {
-        display: none !important;
+
+  .home-top {
+  font-size: 22px;
+  color: #fff;
+  position: fixed;
+  right: 114px;
+  bottom: 20px;
+  text-align: center;
+  width: 88px;
+  letter-spacing: -1.5px;
+  height: 49px;
+  font-family: "Poppins";
+  line-height: 50px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(left, #FF9C1A 0%, #feae45 100%);
+  background: -o-linear-gradient(left, #FF9C1A 0%, #cb7b12 100%);
+  background: linear-gradient(to right, #FF9C1A 0%, #ff9100 100%);
+  text-align: center;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;}
+    .back-to-top:hover {
+      color: #fff; }
+      @media only screen and (max-width: 576px) and (max-width: 767px) {
+        .home-top {
+          display: none !important;
+        }
       }
-    }

@@ -781,7 +781,7 @@ p {
   position: relative;
   z-index: 5;
   height: 100vh; }
-.header-hero .overlay-header {
+.header-hero .overlay-header{
     position: absolute;
     top: 0;
     bottom: 0;
