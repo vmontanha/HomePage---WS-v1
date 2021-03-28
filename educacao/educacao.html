@@ -36,7 +36,35 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
+    <style>
+        #head {
+            position: absolute !important;
+            z-index: 10;
+            top: 8%;
+            left: 10%;
+        }
+        #logo {
+            position: static;
+            width: 100%;
+            margin-right: 0;
+        }
+        #titulo {
+            width: 100%;
+            left: 15%;
+        }
+        @media (max-width: 768px){
+            #logo img {
+                width: 300px;
+                margin-bottom: 20px;
+                left: 50% !important;
+                top: 0 !important;
+            }
+        }
+    </style>
+
+
+
 </head>
 
 <body>
@@ -63,23 +91,16 @@
     <!--====== HEADER PART START ======-->
     
     <header class="header-area">
-        <div class="navbar-area">
-            <div class="container mt-10">
-                <div class="row">
-                    <div class="col-lg-4 m-auto">
-                        <nav class="navbar navbar-expand-lg ml-10">
-                            <a class="navbar-brand" href="../index.html">
-                                <img src="../assets/img/logo.png" class="img-fluid-logo" alt="Logo" style="width: 340px;">
-                            </a>
-                        </nav> <!-- navbar -->
-                    </div>
-                    <div class="col-lg-8 m-auto">
-                        <h1 class="text-light">Educação</h1>
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- navbar area -->
-        
+        <div class="container" id="head">
+            <div class="row">
+                <div class="col-lg-4" id="logo">
+                    <a class="" href="../index.html"><img class="img-fluid" src="/assets/img/logo.png"></a>
+                </div>
+                <div class="col-lg-8" id="titulo">
+                    <h1 class="text-light">Educação</h1>
+                </div>
+            </div>
+        </div>
         <div id="home" class="header-hero bg_cover" style="background-image: url(/educacao/assets/images/img_educacao/1.1.png);">
             <div class="overlay"></div>
             <div class="container">
