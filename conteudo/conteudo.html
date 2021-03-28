@@ -48,11 +48,10 @@
             position: static;
             width: 100%;
             margin-right: 0;
-            left: 5%;
         }
         #titulo {
             width: 100%;
-            left: 15%;
+            left: 10%;
         }
         @media (max-width: 768px){
             #logo img {
@@ -61,20 +60,106 @@
                 left: 50% !important;
                 top: 0 !important;
             }
-            #titulo {
-                margin-bottom: 100px !important;
-                left: 4% !important;
-            }
-            .header-hero-content {
-                margin-top: 50px !important;
-            }
-            .header-hero-content h2 {
-                font-size: 18px !important;
-                line-height: normal !important;
-            }
-            .header-hero-content .get-started {
-                display: none !important;
-            }
+        }
+        .container-image:hover .image {
+        opacity: 0.3;
+        }
+
+        .container-image:hover .middle {
+        opacity: 1;
+        }
+
+        .container-image {
+            position: relative;
+            width: 100%;
+        }
+
+        .container-back:hover .image {
+        opacity: 0;
+        }
+
+        .container-back:hover .middle {
+        opacity: 1;
+        }
+
+        .container-home:hover .image {
+        opacity: 0;
+        }
+
+        .container-home:hover .middle {
+        opacity: 1;
+        }
+
+        .container-back {
+            position: fixed;
+            width: 50px;
+        }
+        .container-home {
+            position: fixed;
+        }
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .container-image .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        }
+
+        .container-back .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        }
+
+        .text-button {
+        background-color: #ff9c1a;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        border-radius: 20px;
+        font-family: "Poppins";
+        }
+        .text-button-back {
+        background-color: #ff9c1a;
+        color: white;
+        font-size: 16px;
+        width: 100%;
+        border-radius: 20px;
+        font-family: "Poppins";
+        cursor: pointer;
+        }
+
+        .text-button:hover {
+        background-color: #ffb453;
+        transition: all ease-out 0.6s;
+        cursor: pointer;
+        }
+
+        .text-button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .text-button-back i {
+            text-decoration: none;
+            color: white;
+            font-size: 20px
         }
     </style>
 
@@ -276,7 +361,22 @@
     
     <!--====== BACK TOP TOP PART START ======-->
 
-    <a href="#" class="back-to-top">WS</a>
+    <div class="container-back home-top">
+        <div class="image">HOME</div>
+        <div class="middle">
+            <div class="text-button-back">
+                <a href="../index.html"><i class="fa fa-home"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-back back-to-top">
+        <div class="image">WS</div>
+        <div class="middle">
+            <div class="text-button-back">
+                <a href="../contato/contato.html"><i class="fa fa-phone"></i></a>
+            </div>
+        </div>
+    </div>
 
     <!--====== BACK TOP TOP PART ENDS ======-->   
     
