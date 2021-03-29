@@ -262,7 +262,45 @@
     </header>
     
     <!--====== HEADER PART ENDS ======-->
-    
+ <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <h1>Call to Action</h1>
+        <div class="row justify-content-center mt-50">
+            <div class="col-lg-3">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Username" aria-describedby="basic-addon1">
+                </div>                  
+            </div>
+            <div class="col-lg-2">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Telefone" aria-label="Username" aria-describedby="basic-addon1">
+                </div>                  
+            </div>
+        </div>
+        <div class="row justify-content-center mt-10">
+            <div class="col-lg-2">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="CEP" aria-label="Username" aria-describedby="basic-addon1">
+                </div>                  
+            </div>
+            <div class="col-lg-3">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                </div>                  
+            </div>
+        </div>
+        <div class="row justify-content-center mt-15">
+            <button class="btn btn-primary">Enviar</button>
+        </div>
+    </div>
+
+</div>   
     
     <!--====== ABOUT PART START ======-->
     
@@ -419,7 +457,7 @@
         <div class="image">WS</div>
         <div class="middle">
             <div class="text-button-back">
-                <a href="../contato/contato.html"><i class="fa fa-phone"></i></a>
+                <a onclick="openNav()"><i class="fa fa-phone"></i></a>
             </div>
         </div>
     </div>
@@ -440,7 +478,17 @@
     
     <!--====== PART ENDS ======-->
 
-
+    <script>
+        /* Open */
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+    
+        /* Close */
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 
 
     <!--====== Jquery js ======-->

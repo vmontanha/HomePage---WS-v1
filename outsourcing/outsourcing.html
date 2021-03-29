@@ -152,8 +152,8 @@
         /* The Overlay (background) */
         .overlay {
         /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-        height: 100%;
-        width: 0;
+        height: 0;
+        width: 100%;
         position: fixed; /* Stay in place */
         z-index: 99999; /* Sit on top */
         left: 0;
@@ -167,7 +167,8 @@
         /* Position the content inside the overlay */
         .overlay-content {
         position: relative;
-        top: 25%; /* 25% from the top */
+        height: auto;
+        top: 20%; /* 25% from the top */
         width: 100%; /* 100% width */
         text-align: center; /* Centered text/links */
         margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
@@ -278,40 +279,17 @@
     <div class="overlay-content">
         <h1>Call to Action</h1>
         <div class="row justify-content-center mt-50">
-            <div class="col-lg-3">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Username" aria-describedby="basic-addon1">
-                </div>                  
+            <div class="col-6">
+                <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/1ACCV5dq3Ak7LOGQBZorGjbpxSt6V7H07jALCtjOCew1CQ4w9qT9Wrl88O5AsZRRN"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
             </div>
-            <div class="col-lg-2">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Telefone" aria-label="Username" aria-describedby="basic-addon1">
-                </div>                  
-            </div>
-        </div>
-        <div class="row justify-content-center mt-10">
-            <div class="col-lg-2">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="CEP" aria-label="Username" aria-describedby="basic-addon1">
-                </div>                  
-            </div>
-            <div class="col-lg-3">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
-                </div>                  
-            </div>
-        </div>
-        <div class="row justify-content-center mt-15">
-            <button class="btn btn-primary">Enviar</button>
         </div>
     </div>
-
 </div>
     
     <section id="about" class="about-area pt-70">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="section-title">
 
@@ -346,7 +324,7 @@
                 </div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="container-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="../assets/img/imagens  outsourcing/carlos-muza-hpjSkU2UYSU-unsplash.jpg" class="image" alt="about">
+                        <img src="/outsourcing/assets/images/img_outsourcing/" class="image" alt="about">
                     </div> <!-- about image -->
                 </div>
             </div> <!-- row -->
@@ -368,7 +346,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="container-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="../assets/img/imagens  outsourcing/cytonn-photography-vWchRczcQwM-unsplash.jpg" alt="about">
+                        <img src="/outsourcing/assets/images/img_outsourcing/" alt="about">
                         
                     </div> <!-- about image -->
                 </div>
@@ -392,7 +370,7 @@
                 </div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="container-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="../assets/img/imagens  outsourcing/j-kelly-brito-PeUJyoylfe4-unsplash.jpg" alt="about">
+                        <img src="/outsourcing/assets/images/img_outsourcing/" alt="about">
                         
                     </div> <!-- about image -->
                 </div>
@@ -414,7 +392,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="container-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="../assets/img/imagens  outsourcing/john-schnobrich-FlPc9_VocJ4-unsplash.jpg" alt="about">
+                        <img src="/outsourcing/assets/images/img_outsourcing/" alt="about">
                         
                     </div> <!-- about image -->
                 </div>
@@ -436,7 +414,7 @@
                 </div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="container-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="../assets/img/imagens  outsourcing/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="about">
+                        <img src="/outsourcing/assets/images/img_outsourcing/" alt="about">
                         
                     </div> <!-- about image -->
                 </div>
@@ -458,7 +436,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="container-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="../assets/img/imagens  outsourcing/postits.jpg" alt="about">
+                        <img src="/outsourcing/assets/images/img_outsourcing/"alt="about">
                         
                     </div> <!-- about image -->
                 </div>
@@ -480,7 +458,7 @@
                 </div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="container-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="../assets/img/imagens  outsourcing/6.png" alt="about">
+                        <img src="/outsourcing/assets/images/img_outsourcing/" alt="about">
                         
                     </div> <!-- about image -->
                 </div>
@@ -548,12 +526,12 @@
     <script>
     /* Open */
     function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.height = "100%";
     }
 
     /* Close */
     function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.height = "0%";
     }
     </script>
     <!--====== Jquery js ======-->
