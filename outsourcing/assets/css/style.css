@@ -806,7 +806,7 @@ p {
   }
 
 .get-started {
-  margin-top: 300px;
+  margin-top: 5%;
   width: 50px;
 }
 @media only screen and (max-width: 576px) and (max-width: 767px) {
