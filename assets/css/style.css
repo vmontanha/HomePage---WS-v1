@@ -556,6 +556,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 578px) {
+  #logo  {
+    width: 380px !important;
+    text-align: center;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Sections General
