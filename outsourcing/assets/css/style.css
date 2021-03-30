@@ -117,12 +117,13 @@ ul, ol {
   list-style-type: none; }
 
 p {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 26px;
   color: #6A6972;
   margin: 0px; 
-  margin-top: 15px;}
+  margin-top: 15px;
+text-align: justify !important;}
 
 .bg_cover {
   background-position: center center;
