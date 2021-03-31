@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="construcao/images/wesell-favicon.png" rel="icon">
+  <link href="assets/img/wesell-favicon.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -25,6 +25,9 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!--====== Font Awesome CSS ======-->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
@@ -37,6 +40,158 @@
       color: white;
     }
 
+    section .title {
+      color: white;
+    }
+
+    .container-image {
+        position: relative;
+        width: 100%;
+    }
+
+    .container-back:hover .image {
+    opacity: 0;
+    }
+
+    .container-back:hover .middle {
+    opacity: 1;
+    }
+
+    .container-back {
+        position: fixed;
+        text-align: center !important;
+    }
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: 50%;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .container-back .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    }
+
+    .text-button-back {
+    background-color: #ff9c1a;
+    color: white;
+    font-size: 22px;
+    width: 100%;
+    border-radius: 20px;
+    font-family: "Poppins";
+    cursor: pointer;
+    }
+
+    .text-button:hover {
+    background-color: #ffb453;
+    transition: all ease-out 0.6s;
+    cursor: pointer;
+    }
+
+    .text-button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .text-button-back i {
+        text-decoration: none;
+        color: white;
+        font-size: 20px
+    }
+    /* The Overlay (background) */
+    .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 1); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+
+    /* Position the content inside the overlay */
+    .overlay-content {
+    position: relative;
+    top: 10%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+
+    /* The navigation links inside the overlay */
+    .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    }
+
+    .overlay-content h1{
+        color: white;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    }
+
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    }
+
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+    @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    }
+  .back-to-top {
+  font-size: 21px;
+  color: #fff;
+  position: fixed;
+  right: 35px;
+  top: 20px;
+  width: 64px;
+  height: 54px;
+  text-align: center;
+  font-family: "Poppins";
+  line-height: 50px;
+  padding-top: 2px;
+  border-radius: 16px;
+  background: -webkit-linear-gradient(left, #FF9C1A 0%, #feae45 100%);
+  background: -o-linear-gradient(left, #FF9C1A 0%, #cb7b12 100%);
+  background: linear-gradient(to right, #FF9C1A 0%, #ff9100 100%);
+  text-align: center;
+  z-index: 99 !important;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;}
+  .back-to-top:hover {
+    color: #fff; }
   </style>
   <script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 7396729,playbookUuid: '8c76bc90-e661-482d-82f4-60754c0d4730',version: 2};(function () {var w = window;if (w.LeadBooster) {console.warn('LeadBooster already exists');} else {w.LeadBooster = {q: [],on: function (n, h) {this.q.push({ t: 'o', n: n, h: h });},trigger: function (n) {this.q.push({ t: 't', n: n });},};}})();</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
 
@@ -53,7 +208,21 @@
       </div>
     </div>
   </section><!-- End Hero -->
+<div id="myNav" class="overlay">
 
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+      <div class="row justify-content-center mt-50">
+          <div class="col-6">
+              <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/1ACCV5dq3Ak7LOGQBZorGjbpxSt6V7H07jALCtjOCew1CQ4w9qT9Wrl88O5AsZRRN"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+          </div>
+      </div>
+  </div>
+
+</div> 
   <main id="main">
 
     <!-- ======= Icon Boxes Section ======= -->
@@ -63,7 +232,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
             <div class="icon-box">
-              <a href="/outsourcing/outsourcing.html"><h4 class="title">Outsourcing</h4></a>
+              <h4 class="title">Outsourcing</h4>
               <p class="description">Atuamos como representantes de outras empresas como executores nos âmbitos de Marketing, Gestão e Vendas. Entendendo a estrutura funcional da empresa através de um estudo de mercado para o desenvolvimento de um planejamento e direcionamento estratégico. Em seguida, colocamos nossa solução em execução e cuidamos da manutenção da mesma. 
               </p>
             </div>
@@ -71,7 +240,7 @@
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
-              <a href="/academy/academy.html"><h4 class="title">Academy</h4></a>
+              <h4 class="title">Academy</h4>
               <p class="description">A We Sell identifica as necessidades dos profissionais que atuam no mercado e alinha às linhas de conteúdo educacional desenvolvidos a partir das metodologias e técnicas de vendas. Nosso programa atua em constante processo de expansão para outras áreas e em diferentes formatos em um ambiente de capacitação constante.
               </p>
             </div>
@@ -79,7 +248,7 @@
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
-              <a href="/conteudo/conteudo.html"><h4 class="title">Conteúdo</h4></a>
+              <h4 class="title">Conteúdo</h4>
               <p class="description">Buscamos transformar a forma pela qual a informação é consumida. Por isso, nossas linhas de conteúdo são diretamente associadas às diferentes fases e necessidades do profissional. Unindo conteúdo e entretenimento, a We Sell oferece conteúdo para quem deseja consumir informação pura, sem a necessidade de uma assinatura.
               </p>
             </div>
@@ -89,9 +258,27 @@
 
       </div>
     </section><!-- End Icon Boxes Section -->
-
   </main><!-- End #main -->
   <div id="preloader"></div>
+  <div class="container-back back-to-top">
+    <div class="image">WS</div>
+    <a onclick="openNav()"><div class="middle">
+        <div class="text-button-back">
+            <i class="fa fa-phone"></i>
+        </div>
+    </div></a>
+  </div>
+  <script>
+    /* Open */
+    function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+    }
+
+    /* Close */
+    function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+    }
+</script>
   <script>
     (function(){
   
